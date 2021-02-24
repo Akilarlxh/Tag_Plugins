@@ -10,6 +10,12 @@
     &.open
       display: none
 
+      & + div
+        display: block
+
+      & + span
+        display: inline
+
   & > .hide-content
     display: none
 
@@ -41,13 +47,9 @@
       i
         transform: rotate(90deg)
 
+      & + div
+        display: block
+
   & > .hide-content
     display: none
     margin: 1.5rem 1.2rem
-
-[data-theme="dark"]
-  .hide-button
-    background #2c2c2c
-    color rgba(255, 255, 255, 0.6)
-  .hide-toggle
-    border-color #2c2c2c

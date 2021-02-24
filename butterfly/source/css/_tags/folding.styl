@@ -11,7 +11,7 @@ details
   margin: 1em 0
   border-radius: 4px
   background: #fff
-  font-size: .9375rem
+  font-size: $font-size
   trans()
   summary
     cursor: pointer
@@ -19,7 +19,7 @@ details
     margin: 0 - 16px
     border-radius: 4px
     color: alpha(#444, .7)
-    font-size: .875rem
+    font-size: .875rem!important
     font-weight: bold
     position: relative
     line-height: normal
@@ -40,6 +40,10 @@ details
   border: 1px solid #f6f6f6
   >summary
     background: #f6f6f6
+  &[purple]
+    border-color: bgcolor(#d017ee)
+    >summary
+      background: bgcolor(#d017ee)
   &[blue]
     border-color: bgcolor(#2196f3)
     >summary
@@ -56,6 +60,10 @@ details
     border-color: bgcolor(#FFBD2B)
     >summary
       background: bgcolor(#FFBD2B)
+  &[orange]
+    border-color: bgcolor(#ec7616)
+    >summary
+      background: bgcolor(#ec7616)
   &[red]
     border-color: bgcolor(#FE5F58)
     >summary
@@ -67,6 +75,10 @@ details[open]
     border-bottom: 1px solid alpha(#444, .2)
     border-bottom-left-radius: 0
     border-bottom-right-radius: 0
+  &[purple]
+    border-color: alpha(#d017ee, .3)
+    >summary
+      border-bottom-color: alpha(#d017ee, .3)
   &[blue]
     border-color: alpha(#2196f3, .3)
     >summary
@@ -83,6 +95,10 @@ details[open]
     border-color: alpha(#FFBD2B, .3)
     >summary
       border-bottom-color: alpha(#FFBD2B, .3)
+  &[orange]
+    border-color: alpha(#ec7616, .3)
+    >summary
+      border-bottom-color: alpha(#ec7616, .3)
   &[red]
     border-color: alpha(#FE5F58, .3)
     >summary
